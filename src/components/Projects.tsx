@@ -10,7 +10,7 @@ export const projects = [
     title: "Qlock-in App",
     description:
       "A web application designed for small to medium-sized businesses, enabling employees to clock in using their biometrics.",
-    tech: "Spring Boot",
+    tech: "Java",
     link: "https://qlockin-app.onrender.com",
   },
   {
@@ -22,17 +22,17 @@ export const projects = [
   },
   {
     title: "Task Management App",
-    description: "A productivity app built with React Native and Firebase",
-    tech: "React Native",
-    link: "#",
+    description: "A task managment application built using Spring boot with robust spring security, and Reactjs for frontend",
+    tech: "Java",
+    link: "https://github.com/samuelgbenga/taskmng-system.git",
   },
 
   {
     title: "Escalayte Web Application",
     description:
-      "A machine learning powered chatbot using Python and TensorFlow",
-    tech: "Python",
-    link: "#",
+      "A Web Application to manage Escalation within organization. Built with Spring boot, Reactjs",
+    tech: "Java",
+    link: "https://github.com/samuelgbenga/Escalayte.git",
   },
 ];
 
@@ -41,6 +41,9 @@ const techColors = {
   "React Native": "bg-green-500",
   "Vue.js": "bg-purple-500",
   Python: "bg-yellow-500",
+  Java: "bg-orange-500",
+  "C#": "bg-purple-500",
+
 };
 
 export const Projects = () => {

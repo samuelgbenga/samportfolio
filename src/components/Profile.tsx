@@ -6,6 +6,8 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { MdEmail } from "react-icons/md";
+import { IoLogoWhatsapp } from "react-icons/io";
 const socials = [
   {
     name: "Github",
@@ -23,6 +25,16 @@ const socials = [
     icon: <FaXTwitter className="size-4" />,
   },
   // TODO: Add more socials here
+  {
+    name: "Whatsapp",
+    link: "+234 808 809 3428",
+    icon: <IoLogoWhatsapp className="size-4" />,
+  },
+  {
+    name: "Email",
+    link: "samuelgbenga972@gmail.com",
+    icon: <MdEmail className="size-4" />,
+  },
 ];
 
 export const Profile = () => {
@@ -35,7 +47,7 @@ export const Profile = () => {
               width={150}
               height={150}
               quality={100}
-              src="/avatar.svg"
+              src="/ridding.png"
               alt="Profile Picture"
               className="rounded-full size-12 md:w-full h-auto object-cover border-2"
             />
@@ -54,10 +66,11 @@ export const Profile = () => {
           </p>
           <Button className="mt-4 w-full" asChild>
             {/* TODO: Add resume link */}
-            {/* or link to schedule a meeting using Calendly or Cal*/}
+            {/* or link to schedule a meeting using Calendly or Cal
             <Link target="_blank" href="/resume.pdf" className="font-semibold">
               CONTACT ME
             </Link>
+            */}
           </Button>
           <div className="mt-4 flex flex-col space-y-2 border-t border-border pt-4 w-full">
             {socials.map((s, i) => {
@@ -73,7 +86,7 @@ export const Profile = () => {
                 >
                   {s.icon}
                   <p className="text-sm text-muted-foreground group-hover:text-primary transition-color duration-200 ease-linear">
-                    /{username}
+                    {username}
                   </p>
                 </Link>
               );
