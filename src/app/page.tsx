@@ -2,7 +2,6 @@ import { AboutMe } from "@/components/AboutMe";
 import { Experience } from "@/components/Experience";
 import { Projects } from "@/components/Projects";
 import { Sidebar } from "@/components/Sidebar";
-import Image from "next/image";
 
 export default function Home() {
   return (

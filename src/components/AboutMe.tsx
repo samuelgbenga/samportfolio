@@ -9,9 +9,9 @@ export const AboutMe = () => {
       <CardContent>
         <p className="text-muted-foreground">
           {/* Write 1-2 sentences about yourself */}
-          I'm a software engineer, weaving lines of code into scalable web
+          I&apos;m a software engineer, weaving lines of code into scalable web
           magic. My passion? Building efficient apps that never crash—unless, of
-          course, you're testing my patience with Internet Explorer.
+          course, you&apos;re testing my patience with Internet Explorer.
         </p>
       </CardContent>
     </Card>
